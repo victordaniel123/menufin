@@ -1,0 +1,78 @@
+/* Establece márgenes y altura del cuerpo y del documento al 100% */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal con posición relativa */
+/*.container {
+    position: relative;
+    height: 100%;
+}
+
+/* Imagen de fondo que cubre completamente el contenedor */
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+}
+/* Estilo para el texto dentro de los botones */
+.menu-button span {
+    color: rgba(10, 10, 10, 0.9); /* Color del texto (blanco semitransparente) */
+    font-size: 18px; /* Tamaño de la fuente */
+    margin-top: 5px; /* Margen superior para el texto */
+    display: block; /* Hace que el texto se muestre en una nueva línea */
+}
+
+/* ... (otros estilos) ... */
+
+/* Estilo para el contenido central */
+.content {
+    text-align: center;
+}
+
+/* Caja semitransparente que rodea el texto "El Menú de Victor" */
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    padding: 8px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el menú de botones */
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para cada botón del menú */
+.menu-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 150px; /* Ancho del botón */
+    height: 150px; /* Altura del botón */
+    margin: 0 10px; /* Margen entre botones */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Borde blanco semitransparente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; /* Evita que las imágenes sobresalgan del botón */
+    transition: transform 0.3s ease; /* Agrega efecto de escala al hacer hover */
+}
+
+/* Estilo para las imágenes dentro de los botones */
+.menu-button img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor manteniendo la proporción */
+}
+
+/* Efecto de escala al hacer hover sobre el botón */
+.menu-button:hover {
+    transform: scale(1.1);
+}
